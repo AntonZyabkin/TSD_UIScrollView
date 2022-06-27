@@ -9,21 +9,24 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    var scrollView = UIScrollView ()
+    var imageView = UIImageView ()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//        scrollView.backgroundColor = #colorLiteral(red: 0.9399933023, green: 0.9906174686, blue: 1, alpha: 1)
+//        scrollView.isScrollEnabled = true
+        
+        let imagetest = UIImage (named: "Image")
+        scrollView = UIScrollView(frame: CGRect(x: 0, y: 200, width: 300, height: 300))
+//        scrollView = UIScrollView(frame: self.view.bounds)
+        imageView = UIImageView(image: imagetest)
+        scrollView.addSubview(imageView)
+        scrollView.contentSize = self.scrollView.bounds.size
+        view.addSubview(scrollView)
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
