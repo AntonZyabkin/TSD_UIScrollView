@@ -9,24 +9,22 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
-    var scrollView = UIScrollView ()
     var imageView = UIImageView ()
-    
+    var itemScrollView = UIScrollView ()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        scrollView.backgroundColor = #colorLiteral(red: 0.9399933023, green: 0.9906174686, blue: 1, alpha: 1)
-//        scrollView.isScrollEnabled = true
-        
-        let imagetest = UIImage (named: "Image")
-        scrollView = UIScrollView(frame: CGRect(x: 0, y: 200, width: 300, height: 300))
-//        scrollView = UIScrollView(frame: self.view.bounds)
-        imageView = UIImageView(image: imagetest)
-        scrollView.addSubview(imageView)
-        scrollView.contentSize = self.scrollView.bounds.size
-        view.addSubview(scrollView)
+        generateItemScrollView ()
     }
 
-
+    
+    
+    //настроим скроллВью для визуализации айтемов
+    func generateItemScrollView () {
+        itemScrollView = UIScrollView (frame: CGRect (x: 0, y: 240, width: view.frame.width, height: 200))
+        itemScrollView.backgroundColor = .white
+        itemScrollView.contentSize = CGSize (width: 600, height: 200)
+        view.addSubview(itemScrollView)
+    }
 }

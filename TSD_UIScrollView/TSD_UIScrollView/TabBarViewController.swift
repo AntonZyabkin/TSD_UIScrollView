@@ -8,15 +8,19 @@
 import UIKit
 
 class TabBarViewController: UITabBarController  {
+    
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         generateTabBar ()
         setTabBarAppearance ()
+
+        
     }
 
     
-    
+    //настроим иконки табАйтем на вьюКонтроллерах и добавим сами контроллеры в ТабБарКОнтроллер
     private func generateTabBar () {
         
         viewControllers = [
@@ -35,6 +39,7 @@ class TabBarViewController: UITabBarController  {
 
     }
     
+    //функция для настройки ВьюКонтроллеров
     private func generateVC (vC: UIViewController,
                              title: String,
                              image: UIImage?) -> UIViewController {
@@ -46,10 +51,13 @@ class TabBarViewController: UITabBarController  {
     }
     
     
+    //функция для настройки цветов ТабБарКонтроллера
     private func setTabBarAppearance () {
-        
         
         tabBar.tintColor = .tabBarItemAccent
         tabBar.unselectedItemTintColor = .tabBarItemLight
     }
+    
+    
+
 }

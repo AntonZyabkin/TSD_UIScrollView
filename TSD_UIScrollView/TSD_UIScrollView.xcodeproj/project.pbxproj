@@ -17,6 +17,7 @@
 		E839E1012869E05300E3F935 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839E1002869E05300E3F935 /* SearchViewController.swift */; };
 		E839E1032869ED7A00E3F935 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839E1022869ED7A00E3F935 /* TabBarViewController.swift */; };
 		E839E105286A03D100E3F935 /* UIColorExtansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839E104286A03D100E3F935 /* UIColorExtansion.swift */; };
+		E839E107286B002900E3F935 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839E106286B002900E3F935 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E839E1002869E05300E3F935 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E839E1022869ED7A00E3F935 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		E839E104286A03D100E3F935 /* UIColorExtansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtansion.swift; sourceTree = "<group>"; };
+		E839E106286B002900E3F935 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		E839E0E72869CB9900E3F935 /* TSD_UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				E839E108286B018800E3F935 /* iwatch */,
 				E839E0E82869CB9900E3F935 /* AppDelegate.swift */,
 				E839E0EA2869CB9900E3F935 /* SceneDelegate.swift */,
 				E839E1022869ED7A00E3F935 /* TabBarViewController.swift */,
@@ -72,11 +75,19 @@
 				E839E1002869E05300E3F935 /* SearchViewController.swift */,
 				E839E0EC2869CB9900E3F935 /* ViewController.swift */,
 				E839E104286A03D100E3F935 /* UIColorExtansion.swift */,
+				E839E106286B002900E3F935 /* Model.swift */,
 				E839E0F12869CB9B00E3F935 /* Assets.xcassets */,
 				E839E0F32869CB9B00E3F935 /* LaunchScreen.storyboard */,
 				E839E0F62869CB9B00E3F935 /* Info.plist */,
 			);
 			path = TSD_UIScrollView;
+			sourceTree = "<group>";
+		};
+		E839E108286B018800E3F935 /* iwatch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iwatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E839E107286B002900E3F935 /* Model.swift in Sources */,
 				E839E1012869E05300E3F935 /* SearchViewController.swift in Sources */,
 				E839E0ED2869CB9900E3F935 /* ViewController.swift in Sources */,
 				E839E0FF2869E04400E3F935 /* PearsonViewController.swift in Sources */,
