@@ -16,19 +16,41 @@ let titleItemImage = ["Смартфон Apple iPhone 11 64GB, Белый", "Ме
 
 
 func createBlock (vC: UIViewController) {
-    var underView = UIView ()
     
     for i in 0..<albosItemArray.count {
+        var underView = UIView ()
 
-        widthOfItemScrollView += 170
-        underView = UIView (frame: CGRect (x: (15 + i * 170), y: 0, width: 155, height: 200))
+        // настраиваем ширину СкроллВью
+        widthOfItemScrollView += 165
+        
+        //настраиваем подложку айтема и добавляем ее на СкроллВЬю
+        underView = UIView (frame: CGRect (x: (15 + i * 165), y: 0, width: 150, height: 200))
         underView.backgroundColor = #colorLiteral(red: 0.09435228258, green: 0.08189914376, blue: 0.1025743857, alpha: 1)
         underView.layer.cornerRadius = 20
         underView.layer.masksToBounds = true
-        
         itemScrollView.addSubview(underView)
+        
+        //настраиваем и добавляем картинки айтемов
+        let imageItem = UIImage (named: albosItemArray[i])
+        let imageViewItem = UIImageView (frame: CGRect (x: 15, y: 15, width: 120, height: 120))
+        imageViewItem.image = imageItem
+        imageViewItem.contentMode = .scaleAspectFill
+        imageViewItem.layer.masksToBounds = true
+        imageViewItem.layer.cornerRadius = 10
+        underView.addSubview(imageViewItem)
+        
+        //настраиваем лейбл с описание
+        let descriptionLabel = UILabel (frame: CGRect (x: 20, y: 135, width: 110, height: 70))
+        descriptionLabel.text = titleItemImage [i]
+        descriptionLabel.numberOfLines = 3
+        descriptionLabel.font = UIFont (name: "AppleSDGothicNeo-Thin", size: 15)
+        descriptionLabel.textColor = .white
+        underView.addSubview(descriptionLabel)
+        
+        
     }
     itemScrollView.contentSize = CGSize (width: widthOfItemScrollView, height: 200)
+    itemScrollView.backgroundColor = .clear
 }
 
 func  createUnderView () {
