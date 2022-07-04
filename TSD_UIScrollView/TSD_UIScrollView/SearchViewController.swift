@@ -16,7 +16,9 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
         generateItemScrollView (vC: self)
         createBlock (vC: self)
-        
+        createSearchLabel(vC: self)
+        createResantlyWatchedLabel (vC :self)
+        createSearchTextField (vC: self)
     }
 
     
