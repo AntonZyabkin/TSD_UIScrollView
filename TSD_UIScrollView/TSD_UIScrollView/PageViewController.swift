@@ -67,7 +67,7 @@ class PageViewController: UIPageViewController {
     @objc func finish () {
    
         let navVc = UINavigationController (rootViewController: TabBarViewController())
-        navigationController?.pushViewController(navVc, animated: true)
+        navigationController?.pushViewController(TabBarViewController(), animated: true)
         animateView(arrayOnboardingVC[curentIndex].letsStartButton)
 
     

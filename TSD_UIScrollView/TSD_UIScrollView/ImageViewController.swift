@@ -46,6 +46,8 @@ class ImageViewController: UIViewController {
         imageView.frame = CGRect (x: 0, y: 0, width: Int(view.bounds.maxX), height: 650)
         letsStartButton.frame = CGRect (x: 0, y: 750, width: 300, height: 50)
         letsStartButton.center.x = view.center.x
+        navigationItem.hidesBackButton = true
+        navigationItem.setHidesBackButton(true, animated: true)
     }
     
     required init?(coder: NSCoder) {

@@ -15,8 +15,9 @@ class TabBarViewController: UITabBarController  {
         super.viewDidLoad()
         generateTabBar ()
         setTabBarAppearance ()
-
-        self.tabBar.window 
+        view.backgroundColor = .black
+        navigationItem.hidesBackButton = true
+        navigationItem.setHidesBackButton(true, animated: true)
     }
 
     
