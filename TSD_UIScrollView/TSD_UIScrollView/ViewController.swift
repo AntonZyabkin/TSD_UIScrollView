@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         imageScrollView.backgroundColor = .white
         
         for i in albomArray[curentItem] {
+            
             let image = UIImage (named: i)
             let imageView = UIImageView (frame: CGRect (x: 0, y: 0, width: view.frame.width, height: 300))
             imageView.center.x = view.frame.width / 2 + CGFloat(num) * view.frame.width
