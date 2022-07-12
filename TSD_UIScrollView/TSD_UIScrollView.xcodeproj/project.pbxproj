@@ -18,6 +18,9 @@
 		E839E1032869ED7A00E3F935 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839E1022869ED7A00E3F935 /* TabBarViewController.swift */; };
 		E839E105286A03D100E3F935 /* UIColorExtansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839E104286A03D100E3F935 /* UIColorExtansion.swift */; };
 		E839E107286B002900E3F935 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839E106286B002900E3F935 /* Model.swift */; };
+		E845E578287DB66F00620653 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845E577287DB66F00620653 /* ImageViewController.swift */; };
+		E845E57A287DB6A500620653 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845E579287DB6A500620653 /* Helper.swift */; };
+		E845E57C287DB6CF00620653 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845E57B287DB6CF00620653 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		E839E1022869ED7A00E3F935 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		E839E104286A03D100E3F935 /* UIColorExtansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtansion.swift; sourceTree = "<group>"; };
 		E839E106286B002900E3F935 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E845E577287DB66F00620653 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		E845E579287DB6A500620653 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		E845E57B287DB6CF00620653 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 				E839E0EC2869CB9900E3F935 /* ViewController.swift */,
 				E839E104286A03D100E3F935 /* UIColorExtansion.swift */,
 				E839E106286B002900E3F935 /* Model.swift */,
+				E845E577287DB66F00620653 /* ImageViewController.swift */,
+				E845E57B287DB6CF00620653 /* PageViewController.swift */,
+				E845E579287DB6A500620653 /* Helper.swift */,
 				E839E0F12869CB9B00E3F935 /* Assets.xcassets */,
 				E839E0F32869CB9B00E3F935 /* LaunchScreen.storyboard */,
 				E839E0F62869CB9B00E3F935 /* Info.plist */,
@@ -160,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E845E57A287DB6A500620653 /* Helper.swift in Sources */,
 				E839E107286B002900E3F935 /* Model.swift in Sources */,
 				E839E1012869E05300E3F935 /* SearchViewController.swift in Sources */,
+				E845E57C287DB6CF00620653 /* PageViewController.swift in Sources */,
+				E845E578287DB66F00620653 /* ImageViewController.swift in Sources */,
 				E839E0ED2869CB9900E3F935 /* ViewController.swift in Sources */,
 				E839E0FF2869E04400E3F935 /* PearsonViewController.swift in Sources */,
 				E839E0FD2869E03300E3F935 /* BuyViewController.swift in Sources */,

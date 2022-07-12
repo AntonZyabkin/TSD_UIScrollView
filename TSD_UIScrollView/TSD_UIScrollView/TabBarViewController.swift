@@ -16,7 +16,7 @@ class TabBarViewController: UITabBarController  {
         generateTabBar ()
         setTabBarAppearance ()
 
-        
+        self.tabBar.window 
     }
 
     
